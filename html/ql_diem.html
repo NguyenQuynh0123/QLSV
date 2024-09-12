@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Điểm</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Quản Lý Điểm</h2>
+
+
+
+        <!-- Bảng quản lý điểm -->
+        <table class="table table-bordered text-center">
+            <thead class="table-light">
+                <tr>
+                    <th>Mã sinh viên</th>
+                    <th>Tên sinh viên</th>
+                    <th>Tên môn học</th>
+                    <th>Điểm giữa kỳ</th>
+                    <th>Điểm cuối kỳ</th>
+                    <th>Điểm tổng kết</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SV001</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Toán Cao Cấp</td>
+                    <td>7.5</td>
+                    <td>8.0</td>
+                    <td>7.8</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm">Sửa</button>
+                        <button class="btn btn-danger btn-sm">Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SV002</td>
+                    <td>Trần Thị B</td>
+                    <td>Lý Thuyết Mạch</td>
+                    <td>6.0</td>
+                    <td>7.0</td>
+                    <td>6.5</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm">Sửa</button>
+                        <button class="btn btn-danger btn-sm">Xóa</button>
+                    </td>
+                </tr>
+                <!-- Các hàng dữ liệu khác sẽ được thêm tại đây -->
+            </tbody>
+        </table>
+
+        <!-- Nút thêm điểm mới -->
+        <div class="d-flex justify-content-end">
+            <a href="../html/add_diem.html" class="btn btn-info">Thêm điểm mới</a>
+        </div>
+    </div>
+</body>
+
+</html>

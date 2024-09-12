@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/Logo Truong Dai hoc Mo - Dia chat.jfif" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                Quản lý sinh viên
+            </a>
+            <span class="navbar-text">
+                Hello, admin!
+            </span>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left sidebar -->
+            <div class="col-md-2">
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action active" onclick="showContent('tongquan')">Tổng quan</a>
+                    <a class="list-group-item list-group-item-action" onclick="showContent('lopmonhoc')">Lớp môn học</a>
+                    <a class="list-group-item list-group-item-action" onclick="showContent('monhoc')">Môn học</a>
+                    <a class="list-group-item list-group-item-action" onclick="showContent('khoa')">Khoa</a>
+                    <a class="list-group-item list-group-item-action" onclick="showContent('danhsachsinhvien')">Danh sách sinh viên</a>
+                    <a class="list-group-item list-group-item-action" onclick="showContent('giaovien')">QL Giáo viên</a>
+                    <a class="list-group-item list-group-item-action" onclick="showContent('diem')">QL Diem</a>
+                </div>
+            </div>
+
+            <!-- Main content area -->
+            <div class="col-md-7" id="main-content">
+                <div id="tongquan" class="main-content">
+                    <h3>Tổng quan</h3>
+                    <p>Thông tin tổng quan sẽ được hiển thị ở đây.</p>
+                </div>
+
+                <div id="lopmonhoc" class="main-content" style="display: none;">
+                    <h3>Lớp môn học</h3>
+                    <nav class="navbar navbar-light bg-light search-bar">
+                        <div class="container-fluid">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+                                <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+                                <a href="../html/ql_lopmonhoc.html" class="btn btn-info ms-2">QL lớp học</a>
+
+                            </form>
+                        </div>
+                    </nav>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CNPM</h5>
+                                    <p class="card-text">GV: NNA</p>
+                                    <p class="card-text">Thứ 5, tiết 15</p>
+                                    <p class="card-text">Phòng học: D04</p>
+                                    <a href="#" id="detail" class="btn btn-primary">Xem thông tin</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">Supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div id="monhoc" class="main-content" style="display: none;">
+                    <h3>Môn học</h3>
+                    <nav class="navbar navbar-light bg-light search-bar">
+                        <div class="container-fluid">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+                                <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+                                <a href="../html/ql_monhoc.html" class="btn btn-info ms-2">QL môn học</a>
+                            </form>
+                        </div>
+                    </nav>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tên môn học</th>
+                                <th scope="col">Mã môn học</th>
+                                <th scope="col">Số tín chỉ</th>
+                                <th scope="col">Mô tả</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Môn mới nè</td>
+                                <td>IT001</td>
+                                <td>2</td>
+                                <td>Gì đó</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="khoa" class="main-content" style="display: none;">
+                    <h3>Khoa</h3>
+                    <nav class="navbar navbar-light bg-light search-bar">
+                        <div class="container-fluid">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+                                <a class="btn btn-outline-success" type="submit">Tìm kiếm</a>
+                                <a href="../html/ql_khoa.html" class="btn btn-info ms-2">QL khoa</a>
+                            </form>
+                        </div>
+                    </nav>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tên khoa</th>
+                                <th scope="col">Ngày thành lập</th>
+                                <th scope="col">Số lượng sinh viên</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Khoa CNTT</td>
+                                <td>2005</td>
+                                <td>1500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="danhsachsinhvien" class="main-content" style="display: none;">
+                    <h3>Danh sách sinh viên</h3>
+                    <p>Thông tin danh sách sinh viên sẽ được hiển thị ở đây.</p>
+                    <nav class="navbar navbar-light bg-light search-bar">
+                        <div class="container-fluid">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+                                <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+                                <a href="" class="btn btn-info ms-2">QL sinh vien</a>
+                            </form>
+                        </div>
+                    </nav>
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tên môn học</th>
+                                <th scope="col">Mã môn học</th>
+                                <th scope="col">Số tín chỉ</th>
+                                <th scope="col">Mô tả</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Môn mới nè</td>
+                                <td>IT001</td>
+                                <td>2</td>
+                                <td>Gì đó</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="giaovien" class="main-content" style="display: none;">
+                    <h3>QL Giáo viên (future work)</h3>
+                    <p>Nội dung cài đặt sẽ được hiển thị ở đây.</p>
+                </div>
+                <div id="diem" class="main-content" style="display: none;">
+                    <h3>QL diem</h3>
+                    <p>Nội dung diem sẽ được hiển thị ở đây.</p>
+                    <nav class="navbar navbar-light bg-light search-bar">
+                        <div class="container-fluid">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+                                <!-- <button class="btn btn-outline-success" type="submit">Tra cứu</button> -->
+                                 <a href="http://localhost:8080/web/html/traCuuDiem.php class="btn btn-outline-success type="submit">Tra cứu</a>
+                                <a href="../html/ql_diem.html" class="btn btn-info ms-2">QL diem</a>
+                            </form>
+                        </div>
+                    </nav>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Mã sv</th>
+                                <th scope="col">Mã môn học</th>
+                                <th scope="col">a</th>
+                                <th scope="col">b</th>
+                                <th scope="col">c</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2121057777</td>
+                                <td>IT001</td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Right detail section (hidden by default) -->
+            <div class="col-md-3" id="card-detail" style="display: none;">
+                <div class="card">
+                    <img src="../assets/img/dai-hoc-mo-dia-chat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CNPM</h5>
+                        <p class="card-text">Mã lớp: IT001</p>
+                        <p class="card-text">Giảng viên: Nguyễn Văn A</p>
+                        <p class="card-text">Lịch học: Thứ 5, Tiết 15</p>
+                        <p class="card-text">Sĩ số: 0</p>
+                        <p class="card-text">Sĩ số tối đa: 60</p>
+                        <button class="btn btn-danger" onclick="hideCardDetail()">Tắt</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="../js/trangchinh.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.card {
+    margin-top: 20px;
+}

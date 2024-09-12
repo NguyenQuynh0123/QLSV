@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý môn học</title>
+    <link rel="stylesheet" href="../assets/css/quanlylopmonhoc.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Quản lý môn học</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="selectAll"></th>
+                    <th>Tên môn học</th>
+                    <th>Mã môn</th>
+                    <th>Số tín chỉ</th>
+                    <th>Mô tả</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" class="select-class"></td>
+                    <td>Lập trình Java</td>
+                    <td>IT002</td>
+                    <td>2</td>
+                    <td>30</td>
+                </tr>
+                
+               
+            </tbody>
+        </table>
+
+        <!-- Nút Hành động -->
+        <div class="actions">
+            <button class="edit-btn">Sửa</button>
+            <button class="delete-btn">Xóa</button>
+            <a href="../html/add_monhoc.html" class="btn btn-info ms-2">Thêm mon học</a>
+        </div>
+    </div>
+
+    <script src="../js/suaxoa.js"></script>
+</body>
+</html>

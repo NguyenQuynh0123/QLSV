@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý lớp môn học</title>
+    <link rel="stylesheet" href="../assets/css/quanlylopmonhoc.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Quản lý lớp môn học</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="selectAll"></th>
+                    <th>Mã lớp</th>
+                    <th>Tên học phần</th>
+                    <th>Lớp</th>
+                    <th>Thứ</th>
+                    <th>Tiết</th>
+                    <th>Giảng viên</th>
+                    <th>Số lượng sinh viên</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" class="select-class"></td>
+                    <td>L001</td>
+                    <td>Lập trình Java</td>
+                    <td>D401</td>
+                    <td>thứ 5</td>
+                    <td>tiết 15</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>30</td>
+                </tr>
+                
+               
+            </tbody>
+        </table>
+
+        <!-- Nút Hành động -->
+        <div class="actions">
+            <button class="edit-btn">Sửa</button>
+            <button class="delete-btn">Xóa</button>
+            <a href="../html/add_lopmonhoc.html" class="btn btn-info ms-2">Thêm lớp mới</a>
+        </div>
+    </div>
+
+    <script src="../js/suaxoa.js"> </script>
+</body>
+</html>

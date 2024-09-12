@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm lớp môn học</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center mt-4">Thêm lớp môn học</h2>
+        <form action="/submit_class" method="POST" class="mt-4">
+            <div class="mb-3">
+                <label for="maLop" class="form-label">Mã lớp</label>
+                <input type="text" class="form-control" id="maLop" name="maLop" placeholder="Nhập mã lớp" required>
+            </div>
+            <div class="mb-3">
+                <label for="tenHocPhan" class="form-label">Tên học phần</label>
+                <input type="text" class="form-control" id="tenHocPhan" name="tenHocPhan" placeholder="Nhập tên học phần" required>
+            </div>
+            <div class="mb-3">
+                <label for="lop" class="form-label">Lớp</label>
+                <input type="text" class="form-control" id="lop" name="lop" placeholder="Nhập lớp" required>
+            </div>
+            <div class="mb-3">
+                <label for="thu" class="form-label">Thứ</label>
+                <select class="form-select" id="thu" name="thu" required>
+                    <option selected disabled>Chọn thứ</option>
+                    <option value="2">Thứ 2</option>
+                    <option value="3">Thứ 3</option>
+                    <option value="4">Thứ 4</option>
+                    <option value="5">Thứ 5</option>
+                    <option value="6">Thứ 6</option>
+                    <option value="7">Thứ 7</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="tiet" class="form-label">Tiết</label>
+                <select class="form-select" id="tiet" name="tiet" required>
+                    <option selected disabled>Chọn tiet hoc</option>
+                    <option value="1">Tiet 1</option>
+                    <option value="2">Tiet 2</option>
+                    <option value="3">Tiet 3</option>
+                    <option value="4">Tiet 4</option>
+                    <option value="5">Tiet 5</option>
+                    <option value="6">Tiet 6</option>
+                    <option value="7">Tiet 7</option>
+                    <option value="8">Tiet 8</option>
+                    <option value="9">Tiet 9</option>
+                    <option value="10">Tiet 10</option>
+                    <option value="11">Tiet 11</option>
+                    <option value="12">Tiet 12</option>
+                    <option value="13">Tiet 13</option>
+                    <option value="14">Tiet 14</option>
+                    <option value="15">Tiet 15</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="giangVien" class="form-label">Giảng viên</label>
+                <input type="text" class="form-control" id="giangVien" name="giangVien" placeholder="Nhập tên giảng viên" required>
+            </div>
+            <div class="mb-3">
+                <label for="soLuongSV" class="form-label">Số lượng sinh viên</label>
+                <input type="number" class="form-control" id="soLuongSV" name="soLuongSV" placeholder="Nhập số lượng sinh viên" required>
+            </div>
+            <button type="submit" class="btn btn-success">Thêm lớp</button>
+        </form>
+    </div>
+    
+</body>
+
+</html>

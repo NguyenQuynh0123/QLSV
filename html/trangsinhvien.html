@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Sinh Viên</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/student.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/img/Logo Truong Dai hoc Mo - Dia chat.jfif" alt="" width="30" height="30"
+                            class="d-inline-block align-text-top">
+                        Trang Sinh Viên
+                    </a>
+                    <!-- user -->
+                    <form class="d-flex">
+                        Hello, Student!
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-3">
+                <!-- left menu -->
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-bulletin-list"
+                        onclick="showContent('bulletin')" aria-controls="list-home">Bảng tin</a>
+                    <a class="list-group-item list-group-item-action" id="list-documents-list"
+                        onclick="showContent('documents')" aria-controls="list-profile">Tài liệu</a>
+                    <a class="list-group-item list-group-item-action" id="list-info-list"
+                        onclick="showContent('bangtin')" aria-controls="list-profile">Bang tin</a>
+                </div>
+            </div>
+            <div class="col-6" id="main-content">
+                <div id="bulletin" class="main-content">
+                    <h3>Bảng tin</h3>
+                    <p>Nội dung bảng tin sẽ được hiển thị ở đây.</p>
+                </div>
+                <div id="documents" class="main-content" style="display: none;">
+                    <h3>Tài liệu</h3>
+                    <p>Nội dung tài liệu sẽ được hiển thị ở đây.</p>
+                    <!--  -->
+                    <nav class="navbar navbar-light bg-light search-bar">
+                        <div class="container-fluid">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Tìm kiếm"
+                                    aria-label="Tìm kiếm">
+                                <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+                                <a href="#" class="btn btn-info ms-2">Thêm tai lieu</a>
+                                <button class="btn btn-info ms-2" style="margin-left: 10px;">Thêm tất cả</button>
+
+                            </form>
+                        </div>
+                    </nav>
+                    <!--  -->
+                </div>
+                <div id="bangtin" class="main-content" style="display: none;">
+                    <h3>Bang tin</h3>
+                    
+
+                </div>
+            </div>
+            <div class="col-3">
+                <!-- calendar and events -->
+                <div class="card" id="calendar-events" style="margin-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Lịch và Sự kiện</h5>
+                        <div id="calendar">
+                            <!-- Bạn có thể tích hợp lịch ở đây, ví dụ: sử dụng Google Calendar hoặc một thư viện lịch -->
+                            <p>Lịch và sự kiện sẽ được hiển thị ở đây.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card" id="student_info" style="margin-top: 20px;">
+                    <div class="card-body">
+                        <h5>Thông tin sinh viên</h5>
+                        <p>Họ và tên: Nguyễn Văn A</p>
+                        <p>Mã sinh viên: 123456789</p>
+                        <p>Lớp: CNTT 01</p>
+                        <p>Email: nguyenvana@student.edu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/trangchinh.js"></script>
+</body>
+
+</html>

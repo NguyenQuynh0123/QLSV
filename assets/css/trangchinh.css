@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+#main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
